@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dừa Xiêm Xanh - Chi tiết sản phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fff5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        .header {
+            background-color: #00a859;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        /* Menu Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #006400;
+            padding: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Product container */
+        .product-container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-container img {
+            max-width: 350px;
+            border-radius: 10px;
+        }
+
+        .product-info {
+            max-width: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .product-info h2 {
+            margin: 10px 0;
+        }
+
+        .rating {
+            font-size: 24px;
+            color: gold;
+            margin: 10px 0;
+        }
+
+        .star {
+            font-size: 30px;
+            cursor: pointer;
+            color: #ccc;
+            transition: color 0.2s;
+        }
+
+        .star:hover,
+        .star.selected {
+            color: gold;
+        }
+
+        .comment-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+            resize: none;
+        }
+
+        .submit-btn {
+            margin-top: 10px;
+            background: #00a859;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #006400;
+        }
+
+        .cart-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .quantity-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .quantity-btn {
+            background-color: #00a859;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        .add-to-cart-btn {
+            background-color: #006400;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #004d00;
+        }
+
+        .share-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .share-button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #3b5998;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .share-button.twitter {
+            background-color: #00acee;
+        }
+
+        .share-button.linkedin {
+            background-color: #0e76a8;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #006400;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Dừa Xiêm Xanh - Chi tiết sản phẩm</h1>
+    </div>
+
+    <!-- Menu Navbar -->
+    <div class="navbar">
+        <a href="index.html">Trang chủ</a>
+        <a href="products.html">Sản phẩm</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+    </div>
+
+    <!-- Product Detail -->
+    <div class="product-container">
+        <!-- Hình ảnh sản phẩm -->
+        <img src="https://tinhdauhoanen.com/wp-content/uploads/2020/08/2020-06-18-17.16.10_2-683x1024.jpg" alt="Dừa Xiêm Xanh">
+        
+        <!-- Thông tin sản phẩm -->
+        <div class="product-info">
+            <h2>Dừa Xiêm Xanh</h2>
+            <p><strong>Giá:</strong> 50,000 VND/quả</p>
+            <p><strong>Mô tả:</strong> Dừa Xiêm Xanh nổi tiếng với nước ngọt, mát và giàu dinh dưỡng. Thích hợp dùng làm nước giải khát tự nhiên hoặc chế biến các món ăn đặc sản. Đặc biệt, dừa Xiêm Xanh từ Bến Tre nổi bật với hương vị tươi ngon, nước ngọt thanh khiết.</p>
+            <p><strong>Thông tin dinh dưỡng:</strong> Nước dừa Xiêm Xanh chứa nhiều vitamin và khoáng chất như kali, natri, vitamin C, giúp cung cấp năng lượng và duy trì sức khỏe tim mạch.</p>
+         <div class="cart-container">
+                <div class="quantity-container">
+                    <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+                    <input type="number" class="quantity-input" id="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart()">Thêm vào giỏ hàng</button>
+            </div>
+
+            <!-- Đánh giá sao -->
+            <div class="rating">
+                <span class="star" onclick="rate(1)">★</span>
+                <span class="star" onclick="rate(2)">★</span>
+                <span class="star" onclick="rate(3)">★</span>
+                <span class="star" onclick="rate(4)">★</span>
+                <span class="star" onclick="rate(5)">★</span>
+            </div>
+            <p id="rating-text">Chọn số sao để đánh giá</p>
+
+            <!-- Bình luận -->
+            <textarea class="comment-box" id="commentText" placeholder="Nhập bình luận của bạn..."></textarea>
+            <button class="submit-btn" onclick="submitComment()">Gửi bình luận</button>
+
+            <!-- Hiển thị bình luận -->
+            <div class="comment-section" id="commentSection"></div>
+
+            <!-- Chia sẻ -->
+            <div class="share-container">
+                <a href="#" class="share-button facebook">Chia sẻ Facebook</a>
+                <a href="#" class="share-button twitter">Chia sẻ Twitter</a>
+                <a href="#" class="share-button linkedin">Chia sẻ LinkedIn</a>
+            </div>
+
+            <!-- Giỏ hàng và số lượng sản phẩm -->
+   
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Dừa Bến Tre. Tất cả các quyền được bảo lưu.</p>
+    </div>
+
+    <script>
+        // Chức năng đánh giá sao
+        let currentRating = 0;
+
+        function rate(star) {
+            currentRating = star;
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((starElem, index) => {
+                if (index < star) {
+                    starElem.classList.add('selected');
+                } else {
+                    starElem.classList.remove('selected');
+                }
+            });
+            document.getElementById("rating-text").innerText = `Bạn đã đánh giá ${star} sao`;
+        }
+
+        // Chức năng gửi bình luận
+        function submitComment() {
+            const commentText = document.getElementById("commentText").value;
+            if (commentText.trim() === "") {
+                alert("Vui lòng nhập bình luận.");
+                return;
+            }
+            const commentSection = document.getElementById("commentSection");
+            const newComment = document.createElement("div");
+            newComment.classList.add("comment");
+            newComment.innerHTML = `<strong>Người dùng:</strong> ${commentText}`;
+            commentSection.appendChild(newComment);
+            document.getElementById("commentText").valuedocument.getElementById("commentText").value = ""; // Xóa nội dung sau khi gửi
+        }
+
+        // Chức năng thay đổi số lượng sản phẩm
+        function changeQuantity(amount) {
+            let quantityInput = document.getElementById("quantity");
+            let currentQuantity = parseInt(quantityInput.value);
+            let newQuantity = currentQuantity + amount;
+            if (newQuantity < 1) newQuantity = 1;
+            quantityInput.value = newQuantity;
+        }
+
+        // Chức năng thêm vào giỏ hàng
+        function addToCart() {
+            let quantity = document.getElementById("quantity").value;
+            alert(`Bạn đã thêm ${quantity} sản phẩm vào giỏ hàng.`);
+        }
+    </script>
+</body>
+</html> 
